@@ -1,0 +1,14 @@
+/*---validaradmin------------------*/
+body { background: url(images/demo/backgrounds/01.jpg); background-repeat: no-repeat; background-position: center; background-attachment: fixed; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; -ms-background-size: cover; font-family: 'Lato', sans-serif; color:#fff;}
+input{margin-bottom: 10px; padding: 15px; font-size: 18px; border-radius: 6px; border: 1px solid white;}
+p{color:#fff; font-size: 18px; padding-bottom: 0; margin-bottom: 0; }
+span{color:yellow;}
+.header1-1{background-color: rgba(84, 84, 85, 0.52);}
+.header1 {text-align: center;font-weight: normal;padding-top: 10px;text-transform: uppercase;letter-spacing: 3px;color: #fff;font-size: 25px;}
+.form-registrer{width: 95%; max-width: 800px; margin: auto; background: rgba(84, 84, 85, 0.52); border-radius: 7px;}
+.form-titulo{background: #16a085; color: #fff; padding: 20px; text-align: center; font-weight: 500; font-size: 30px; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom: 5px solid rgb(84, 84, 85);}
+.contenedor-inputs{padding: 10px 30px; display: flex; flex-wrap: wrap; justify-content: space-between;}
+.input-48{width: 48%; background-color: rgba(0,0,0,0.38);color: white;}
+.input-100{width: 100%; background-color: rgba(0,0,0,0.38);color: #ffffff; height: 10px;}
+.btn-enviar{ background: #16a085; color:#ffffff; margin: auto; padding: 10px 40px; cursor: pointer; font-size: 18px;}
+.btn-enviar:active{transform: scale(1.05);}

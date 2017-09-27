@@ -1,0 +1,265 @@
+@charset "utf-8";
+@import url("fontawesome-4.6.3.min.css");
+@import url("framework.css");
+
+
+/* Top Bar + Header + Pageintro  top-espacio
+--------------------------------------------------------------------------------------------------------------- */
+.topspacer{padding:80px 0;}
+
+/* Top Bar
+--------------------------------------------------------------------------------------------------------------- */
+#topbar{padding:8px 15px; border-radius:5px 5px 0 0; font-size:.8rem; text-transform:uppercase;}
+
+#topbar *{margin:0;}
+#topbar ul li{display:inline-block; margin-right:10px; padding-right:15px; border-right:1px solid;}
+#topbar ul li:last-child{margin-right:0; padding-right:0; border-right:none;}
+#topbar i{margin:0 5px 0 0; line-height:normal;}
+
+
+/* Header
+--------------------------------------------------------------------------------------------------------------- */
+#header{padding:0 15px;}
+
+#header #logo{margin:28px 0 0 0;}
+#header #logo h1{margin:0; padding:0; font-size:22px; text-transform:uppercase;}
+
+
+/* Page Intro
+--------------------------------------------------------------------------------------------------------------- */
+#pageintro{padding:150px 0 70px;}
+
+#pageintro article{display:block; max-width:65%;}
+#pageintro article *{line-height:normal;}
+#pageintro article .heading{margin-bottom:30px; font-size:42px; letter-spacing:2px;}
+#pageintro article p{font-size:16px;}
+#pageintro article footer{margin-top:30px;}
+
+
+/* area de contenidos
+--------------------------------------------------------------------------------------------------------------- */
+.container{padding:80px 0;}
+
+/* Contenidos */
+.container .content{}
+
+.sectiontitle{margin-bottom:80px;}
+.sectiontitle *{margin:0;}
+
+.cta{}
+.cta footer{margin-bottom:0;}
+
+#latest{}
+#latest > ul{}
+#latest > ul > li{}
+#latest > ul > li:last-child{margin-bottom:0;}
+#latest > ul > li > article{display:inline-block; width:100%; max-width:320px; border:1px solid;}
+#latest > ul > li > article > .postexcerpt{padding:20px 15px;}
+#latest > ul > li > article > .postexcerpt *{margin:0; padding:0;}
+#latest > ul > li > article > .postexcerpt .heading{margin-bottom:10px; font-size:1.2rem;}
+#latest > ul > li > article footer{border-top:1px solid;}
+#latest > ul > li > article footer a{display:block; position:relative; width:100%; height:39px; line-height:39px; padding:0 15px; text-transform:uppercase;}
+#latest > ul > li > article footer a::after{position:absolute; top:0; right:0; height:100%; padding:0 15px; font-family:"FontAwesome"; content:"\f105"; border-left:1px solid;}
+
+
+/* Footer
+--------------------------------------------------------------------------------------------------------------- */
+#footer{padding:80px 0;}
+
+#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+
+#footer nav{margin-bottom:30px; text-transform:uppercase;}
+#footer nav ul{}
+#footer nav ul li{display:inline-block; margin-right:20px;}
+#footer nav ul li:last-child{margin-right:0;}
+
+#footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
+#footer .linklist li:last-child{margin:0; padding:0; border:none;}
+#footer .linklist li::before, #footer .linklist li::after{display:table; content:"";}
+#footer .linklist li, #footer .linklist li::after{clear:both;}
+
+#footer .contact{}
+#footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
+#footer .contact li *{margin:0; padding:0; line-height:1.6;}
+#footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+
+
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+#copyright{padding:20px 0;}
+#copyright *{margin:0; padding:0;}
+
+
+*, *::before, *::after{transition:all .3s ease-in-out;}
+#mainav form *{transition:none !important;}
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+
+#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+
+/* Top Navigation */
+#mainav{}
+#mainav ul{text-transform:uppercase;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:30px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:35px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+
+
+/* social icons
+--------------------------------------------------------------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+.faico a{display:inline-block; width:36px; height:36px; line-height:36px; font-size:18px; text-align:center;}
+
+.faico a{color:#FFFFFF; background-color:#272727;}
+
+.faicon-dribble:hover{background-color:#EA4C89;}
+.faicon-facebook:hover{background-color:#3B5998;}
+.faicon-google-plus:hover{background-color:#DB4A39;}
+.faicon-linkedin:hover{background-color:#0E76A8;}
+.faicon-twitter:hover{background-color:#00ACEE;}
+.faicon-vk:hover{background-color:#4E658E;}
+
+
+/* Colores
+--------------------------------------------------------------------------------------------------------------- */
+body{color:#474747; background-color:#FFFFFF;}
+a{color:#16a085;}
+a:active, a:focus{background:transparent;}
+hr, .borderedbox{border-color:#D7D7D7;}
+label span{color:#FF0000; background-color:inherit;}
+input:focus, textarea:focus, *:required:focus{border-color:#16a085;}
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(39,39,39,.65);}
+
+.btn, .btn.inverse:hover, a .icon.fa, a.inverse:hover .icon.fa{color:#FFFFFF; background-color:#16a085; border-color:#16a085;}
+.btn:hover, .btn.inverse, a:hover .icon.fa, a.inverse .icon.fa{color:inherit; background-color:transparent; border-color:inherit;}
+
+
+/* Rows */
+.row0, .row0 a{color:#FFFFFF;}
+.row1{color:#FFFFFF;}
+.row2{color:#474747; background-color:#F6F6F6;}
+.row3{color:#474747; background-color:#FFFFFF;}
+.row4{color:#CBCBCB; background-color:#272727;}
+.row5, .row5 a{color:#474747; background-color:#FFFFFF;}
+
+
+/* Top Bar */
+#topbar{color:inherit; background-color:#16a085;}
+#topbar ul li{border-color:rgba(255,255,255,.3);}
+#topbar > div:last-of-type li:first-child a{color:#272727;}
+
+
+/* Header */
+#header{color:inherit; background-color:#272727;}
+#header #logo a{color:inherit;}
+
+
+/* Content Area */
+#latest > ul > li > article{border-color:#D7D7D7;}
+#latest > ul > li > article footer, #latest > ul > li > article footer a::after{border-color:#D7D7D7;}
+#latest > ul > li > article:hover footer a{color:#FFFFFF; background:#16a085;}
+
+
+/* Footer */
+#footer .heading{color:#FFFFFF;}
+#footer nav a{color:inherit;}
+#footer nav li:first-child a, #footer nav a:hover{color:#16a085;}
+#footer .linklist li{border-color:rgba(255,255,255,.1);}
+
+
+/* Navigation */
+#mainav li a{color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#16a085; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#16a085;}
+#mainav form select{color:#FFFFFF; background-color:#000000; border-color:rgba(255,255,255,.2);}
+
+.container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
+.container .sidebar nav a:hover{color:#16a085;}
+
+/* Media Queries
+--------------------------------------------------------------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+/* Max Wrapper Width - Laptop, Desktop etc.
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (min-width:978px){
+	.hoc{max-width:978px;}
+}
+/* Mobile Devices
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:900px){
+	.hoc{max-width:90%;}
+
+	#topbar{}
+
+	#header{padding:15px;}
+	#header #logo{margin:3px 0 0 0;}
+
+	#mainav{}
+	#mainav ul{display:none;}
+	#mainav form{display:block;}
+
+	#footer{}
+
+	#copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+
+@media screen and (max-width:750px){
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+	.fl_left, .fl_right{display:block; float:none;}
+	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+
+	#topbar{text-align:center;}
+	#topbar ul{margin:0 0 8px 0;}
+	#topbar > div:last-of-type ul{margin:0;}
+
+	#header{text-align:center;}
+	#header #logo{margin:0 0 15px 0;}
+	#pageintro article{max-width:none;}
+
+	#footer{padding-bottom:50px;}/* Not neccessary, just looks a little better */
+}
+
+
+@media screen and (max-width:450px){
+	#topbar ul li{margin-bottom:2px; padding-right:0; border-right:none;}
+}
+
+
+/* Other
+--------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width:650px){
+	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	.scrollable table{margin:0; padding:0; white-space:nowrap;}
+
+	.inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+
+	.font-x2{font-size:1.4rem;}
+	.font-x3{font-size:1.6rem;}
+}

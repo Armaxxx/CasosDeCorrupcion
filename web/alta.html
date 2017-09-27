@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Altas</title>
+        <link href="layout/styles/formularios.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+    <body>
+        <div>
+            <h1 class="header1">Agrega un nuevo caso de corrupcion</h1>
+        </div>
+        <form class="form-registrer" action="ServletRegistroCaso" method="post">
+            <h2 class="form-titulo">Caso de corrupcion</h2><br>
+            <div class="contenedor-inputs">
+                <p>Nombre del caso<span>*</span></p> 
+                <input type="text" name="nombrecomun" class="input-100" placeholder="Caso ABC"><br>
+                <p>Descripcion del caso<span></span></p> 
+                <input class="input-100" type="text" name="descripcion" placeholder="breve descripci&oacute;n"><br>
+                <p>Aproximacion de dinero desviado en millones<span></span></p>
+                <input class="input-100" type="text" name="millones" placeholder="$$$"><br>
+                <p>País sede<span>*</span></p> 
+                <input class="input-100" type="text" name="pais_sede" placeholder="pais"><br>
+            </div>
+            
+            <h2 class="form-titulo">Registro de Juez</h2><br>
+            <div class="contenedor-inputs">
+                <p>Numero de seguridad social del Juez (NSS)<span>*</span></p>
+                <input class="input-100" type="text" name="nss" placeholder="012345678"><br>
+                <p>Nombre del Juez<span>*</span></p>
+                <input class="input-100" type="text" name="nombreJ" placeholder="PACO"><br>
+                <p>Direccion<span></span></p>
+                <input class="input-100" type="text" name="direccionJ" placeholder="Avenida Street 123"><br>
+                <p>Fecha de nacimiento <span>*</span></p>
+                <input class="input-100" type="text" name="fechaNac" placeholder="dd/mm/aa"><br>
+                <p>Fecha que empezo a ejercer <span>*</span></p>
+                <input class="input-100" type="text" name="fechaIni" placeholder="dd/mm/aa"><br>
+                <p>El caso est&aacute; terminado?</p>
+                <input type="radio" name="casoT" value="si" onclick="PartidoConstruirDictamen()"/>SI<br>
+                <input type="radio" name="casoT" value="no" checked onclick="PartidoConstruirDictamen()"/>NO<br>
+                <div id="dictamen">
+                </div>
+            </div>
+            
+            <h2 class="form-titulo">Perio&oacute;ico Descubridor del caso</h2><br>
+            <div class="contenedor-inputs">
+                <p>Nombre del peri&oacute;dico<span>*</span></p>
+                <input class="input-100" type="text" name="nombreP" placeholder="NombrePeriodico"><br>
+                <p>Direcci&oacute;n<span></span>*</p>
+                <input class="input-100" type="text" name="direccionP" placeholder="Avenida Falsa 123"><br>
+                <p>Tiraje<span>*</span></p>
+                <input class="input-100" type="text" name="tiraje"><br>
+                <p>Fecha que se descubrio el caso <span>*</span></p>
+                <input class="input-100" type="text" name="fechaDesc" placeholder="dd/mm/aa"><br>
+                <p><span>*</span> Campo obligatorio</p>
+            </div>
+            
+            <h2 class="form-titulo">Registro Ciudadano implicado</h2><br>
+            <div>
+                <div class="contenedor-inputs">
+                    <input type="button" value="-" onclick="cajaValue(-1)"/>
+                    <input type="text" name="numero" value="0" id="cajas" onkeypress="checkEnter(event,this)"/>
+                    <input type="button" value="+" onclick="cajaValue(1)"/>
+                </div>
+                <div id="formC" class="contenedor-inputs">
+                    <div id="formP_1">
+                        <div id="puesto_1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="form-titulo">Registro Paises implicados</h2><br>
+            <div class="contenedor-inputs">
+                <input type="button" value="-" onclick="caja2Value(-1)"/>
+                <input type="text" name="numero2" value="0" id="cajas2" onkeypress="check2Enter(event,this)"/>
+                <input type="button" value="+" onclick="caja2Value(1)"/>
+            </div>
+            <div id = "formP">
+            </div>
+            <input type="submit">
+        </form>
+        <script src="Scripts/GeneraCajas.js" ></script>
+    </body>
+</html>

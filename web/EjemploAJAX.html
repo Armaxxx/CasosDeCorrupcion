@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplo AJAX</title>
+    </head>
+    <body onload="loadDoc()">
+        <div>Ejemplo de AJAX</div><br>
+        <form>
+            <div id="caja">
+                <input type="button" value="-" onclick="cajaValue(-1)"/>
+                <input type="text" name="numero" value="0" id="cajas" onkeypress="checkEnter(event,this)"/>
+                <input type="button" value="+" onclick="cajaValue(1)"/>
+            </div>
+            <div id="form">
+            </div>
+        </form>
+        <script src="Scripts/GeneraCajas.js" ></script>
+    </body>
+</html>
