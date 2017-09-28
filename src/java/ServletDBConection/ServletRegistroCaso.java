@@ -86,14 +86,9 @@ public class ServletRegistroCaso extends HttpServlet {
                 stmt.executeUpdate(query);
                 System.out.println("Ciudadano "+x+" relacionado al caso");
                 if(request.getParameter("pregunta_"+(x+1)).matches("si")){
-                    String nombreP,direccionP,telefonoP,puesto;
-                    nombreP = request.getParameter("nombreP_"+(x+1));
-                    direccionP = request.getParameter("direccionP_"+(x+1));
-                    telefonoP = request.getParameter("telefonoP_"+(x+1));
-                    query = "Insert into partido_politico values ('"+nombreP+"','"+direccionP+"','"+telefonoP+"')";
-                    System.out.println("Ciudadano "+x+" Pertenece a partido");
-                    stmt.executeUpdate(query);
-                    System.out.println("Partido "+x+" Agregado");
+                    String nombreP,puesto;
+                    nombreP = request.getParameter("partidopol_"+(x+1));
+                    System.out.println(nombreP);
                     if(request.getParameter("pregunta2_"+(x+1)).matches("si")){
                         puesto = request.getParameter("puesto"+(x+1));
                         System.out.println("Tiene puesto en Partido "+x);
@@ -113,11 +108,11 @@ public class ServletRegistroCaso extends HttpServlet {
             direccionP = request.getParameter("direccionP");
             tiraje = request.getParameter("tiraje");
             fechaDesc = request.getParameter("fechaDesc");
-            query = "Insert into periodico values ('"+nombreP+"','"+direccionP+"','"+tiraje+"')";
+            query = "Insert into periodico values ('"+nombreP+"','"+direccionP+"')";
             System.out.println("Periodico Pre");
             stmt.executeUpdate(query);
             System.out.println("Periodico Post");
-            query = "Insert into descubierto values ('"+codigoCaso+"','"+nombreP+"','"+fechaDesc+"')";
+            query = "Insert into descubierto values ('"+codigoCaso+"','"+nombreP+"','"+fechaDesc+"','"+tiraje+"')";
             System.out.println("Descubierto Pre");
             stmt.executeUpdate(query);
             System.out.println("Descubierto Post");
