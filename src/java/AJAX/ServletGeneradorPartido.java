@@ -31,26 +31,15 @@ public class ServletGeneradorPartido extends HttpServlet {
             
             rs = stmt.executeQuery("Select nombreP from partido_politico");
             if (rs.next()){
-                out.println("<div><select id='selectpartido_"+num+"' name='partidopol_"+num+"' onchange=\"otroPartido('"+num+"')\">");
+                out.println("<div><select id='selectpartido_"+num+"' name='partidopol_"+num+"'>");
                 out.println("<option value='"+rs.getString("nombreP")+"'>"+rs.getString("nombreP")+"</option>");
                 while(rs.next()){
                     out.println("<option value='"+rs.getString("nombreP")+"'>"+rs.getString("nombreP")+"</option>");
                 }
-                out.println("<option value='otro'>Otro</option>");
                 out.println("</select></div>");
                 out.println("<div id='otroPartido_"+num+"'>\n</div>");
-            }else{
-                out.println(""
-                + "<p>Nombre del partido polit&iacute;co<span>*</span></p>"
-                + "<input class=\"input-100\" type=\"text\" name=\"nombreP_"+num+"\"/><br>\n" +
-"                <p>Direcci&oacute;n del partido polit&iacute;co<span>*</span></p>"
-                + "<input class=\"input-100\" type=\"text\" name=\"direccionP_"+num+"\"/><br>\n" +
-"                <p>Tel&eacute;fono del partido polit&iacute;co<span>*</span></p>"
-                + "<input class=\"input-100\" type=\"text\" name=\"telefonoP_"+num+"\"/><br>\n");
             }
-            
-                    
-                    out.println("<p>Puesto dentro del partido?</p><br>\n" +
+                out.println("<p>Puesto dentro del partido?</p><br>\n" +
                                 "                <input type=\"radio\" name=\"pregunta2_"+num+"\" value=\"si\" onclick=\"PartidoConstruirCargo("+num+")\"/> SI<br>\n" +
                                 "                <input type=\"radio\" name=\"pregunta2_"+num+"\" value=\"no\" checked onclick=\"PartidoConstruirCargo("+num+")\"/> NO<br>\n" +
                                 "                <div id=\"puesto_"+num+"\">\n" +

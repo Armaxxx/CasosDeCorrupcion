@@ -5,7 +5,7 @@
         <title>Altas</title>
         <link href="layout/styles/formularios.css" rel="stylesheet" type="text/css" media="all">
     </head>
-    <body>
+    <body onload="inicializar()">
         <div>
             <h1 class="header1">Agrega un nuevo caso de corrupcion</h1>
         </div>
@@ -41,12 +41,10 @@
                 </div>
             </div>
             
-            <h2 class="form-titulo">Perio&oacute;ico Descubridor del caso</h2><br>
+            <h2 class="form-titulo">Peri&oacute;dico Descubridor del caso</h2><br>
             <div class="contenedor-inputs">
-                <p>Nombre del peri&oacute;dico<span>*</span></p>
-                <input class="input-100" type="text" name="nombreP" placeholder="NombrePeriodico"><br>
-                <p>Direcci&oacute;n<span></span>*</p>
-                <input class="input-100" type="text" name="direccionP" placeholder="Avenida Falsa 123"><br>
+                <select name="periodico" id="periodicos">
+                </select>
                 <p>Tiraje<span>*</span></p>
                 <input class="input-100" type="text" name="tiraje"><br>
                 <p>Fecha que se descubrio el caso <span>*</span></p>

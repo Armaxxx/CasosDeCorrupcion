@@ -12,6 +12,10 @@ function Execute(url, cFunction) {
   xhttp.send();
 }
 
+function inicializar(){
+    Execute("ServletGeneradorPeriodico",GeneradorCajasCiudadano);
+}
+
 function cajaValue(value){
     var valorEnCaja = document.getElementById("cajas").value;
     valorEnCaja = parseInt(valorEnCaja)+parseInt(value);
@@ -19,7 +23,7 @@ function cajaValue(value){
         valorEnCaja = 0;
     }
     document.getElementById("cajas").value = valorEnCaja;
-    Execute("ServletGeneradorCajas?valor="+valorEnCaja,GeneradorCajasCiudadano);
+    Execute("ServletGeneradorCajas?valor="+valorEnCaja,GeneradorCajasPeriodicos);
 }
 
 function caja2Value(value){
@@ -38,7 +42,9 @@ function GeneradorCajasCiudadano(xhttp){
 function GeneradorCajasPaises(xhttp){
     document.getElementById("formP").innerHTML = xhttp.responseText;
 }
-
+function GeneradorCajasPeriodicos(xhttp){
+    document.getElementById("periodicos").innerHTML = xhttp.responseText;
+}
 function GeneradorCajaPartido(xhttp){
     document.getElementById("formP_"+numCiudadano).innerHTML = xhttp.responseText;
 }

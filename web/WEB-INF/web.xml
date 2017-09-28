@@ -24,6 +24,10 @@
         <servlet-name>ServletGeneradorPartido</servlet-name>
         <servlet-class>AJAX.ServletGeneradorPartido</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletGeneradorPeriodico</servlet-name>
+        <servlet-class>AJAX.ServletGeneradorPeriodico</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletGeneradorCajas</servlet-name>
         <url-pattern>/ServletGeneradorCajas</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>ServletGeneradorPartido</servlet-name>
         <url-pattern>/ServletGeneradorPartido</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletGeneradorPeriodico</servlet-name>
+        <url-pattern>/ServletGeneradorPeriodico</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
