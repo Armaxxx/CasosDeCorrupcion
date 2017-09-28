@@ -32,23 +32,6 @@ function caja2Value(value){
     Execute("ServletGeneradorCajas2?valor="+valorEnCaja,GeneradorCajasPaises);
 }
 
-document.getElementById("")
-function otroPartido(num){
-    var partidoselect = document.getElementById("selectpartido_"+num);
-    var str = partidoselect.options[partidoselect.selectedIndex].value;
-    print(str);
-    if (str === "otro"){
-        document.getElementById("otroPartido_"+num).innerHTML = "<p>Nombre del partido polit&iacute;co<span>*</span></p>"
-                + "<input class=\"input-100\" type=\"text\" name=\"nombreP_"+num+"\"/><br>\n" +
-"                <p>Direcci&oacute;n del partido polit&iacute;co<span>*</span></p>"
-                + "<input class=\"input-100\" type=\"text\" name=\"direccionP_"+num+"\"/><br>\n" +
-"                <p>Tel&eacute;fono del partido polit&iacute;co<span>*</span></p>"
-                + "<input class=\"input-100\" type=\"text\" name=\"telefonoP_"+num+"\"/><br>\n";
-    }else{
-        document.getElementById("otroPartido_"+num).innerHTML = "";
-    }
-}
-
 function GeneradorCajasCiudadano(xhttp){
     document.getElementById("formC").innerHTML = xhttp.responseText;
 }
