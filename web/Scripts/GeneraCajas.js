@@ -13,7 +13,7 @@ function Execute(url, cFunction) {
 }
 
 function inicializar(){
-    Execute("ServletGeneradorPeriodico",GeneradorCajasCiudadano);
+    Execute("ServletGeneradorPeriodico",GeneradorCajasPeriodicos);
 }
 
 function cajaValue(value){
@@ -23,7 +23,7 @@ function cajaValue(value){
         valorEnCaja = 0;
     }
     document.getElementById("cajas").value = valorEnCaja;
-    Execute("ServletGeneradorCajas?valor="+valorEnCaja,GeneradorCajasPeriodicos);
+    Execute("ServletGeneradorCajas?valor="+valorEnCaja,GeneradorCajasCiudadano);
 }
 
 function caja2Value(value){

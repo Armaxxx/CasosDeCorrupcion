@@ -103,15 +103,10 @@ public class ServletRegistroCaso extends HttpServlet {
                 }
             }
             
-            String nombreP,direccionP,tiraje,fechaDesc;
-            nombreP = request.getParameter("nombreP");
-            direccionP = request.getParameter("direccionP");
+            String nombreP,tiraje,fechaDesc;
+            nombreP = request.getParameter("periodico");
             tiraje = request.getParameter("tiraje");
             fechaDesc = request.getParameter("fechaDesc");
-            query = "Insert into periodico values ('"+nombreP+"','"+direccionP+"')";
-            System.out.println("Periodico Pre");
-            stmt.executeUpdate(query);
-            System.out.println("Periodico Post");
             query = "Insert into descubierto values ('"+codigoCaso+"','"+nombreP+"','"+fechaDesc+"','"+tiraje+"')";
             System.out.println("Descubierto Pre");
             stmt.executeUpdate(query);
