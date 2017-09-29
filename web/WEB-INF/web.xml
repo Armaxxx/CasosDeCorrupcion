@@ -40,6 +40,10 @@
         <servlet-name>ServletRelacion</servlet-name>
         <servlet-class>ServletDBConection.ServletRelacion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletBajas</servlet-name>
+        <servlet-class>ServletDBConection.ServletBajas</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletGeneradorCajas</servlet-name>
         <url-pattern>/ServletGeneradorCajas</url-pattern>
@@ -79,6 +83,10 @@
     <servlet-mapping>
         <servlet-name>ServletRelacion</servlet-name>
         <url-pattern>/ServletRelacion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletBajas</servlet-name>
+        <url-pattern>/ServletBajas</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

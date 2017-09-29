@@ -25,9 +25,11 @@ public class ServletRelacion extends HttpServlet {
             Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/casoscorrup","postgres", "cartoon16");
             System.out.println("Conexion Creada");
             Statement stmt = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+            
             String query,nombrePer,nombrePar,tipo = request.getParameter("tipo");
             nombrePar = request.getParameter("partidopolitico");
             nombrePer = request.getParameter("periodico");
+            
             if(tipo.matches("papp")){
                 query = "Insert into periodico_afinidad_partido values ('"+nombrePer+"','"+nombrePar+"')";
             }else{
