@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Relaciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="layout/styles/formularios.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="stylesheet" href="layout/styles/w3.css" type="text/css">
+    </head>
+    <body>
+        <div>
+            <button type="button" class="w3-btn w3-red" onclick="Execute('ServletRelaciones?tipo=papp',ModificadorRelaciones)">Relacionar Peri&oacute;dico a Partido Pol&iacute;tico</button>
+            <button type="button" class="w3-btn w3-red" onclick="Execute('ServletRelaciones?tipo=ppap',ModificadorRelaciones)">Relacionar Partido Pol&iacute;tico a Peri&oacute;dico</button>
+            <div id="relaciones">
+            </div>
+        </div>
+        <script src="Scripts/RelacionesScript.js" ></script>
+    </body>
+</html>

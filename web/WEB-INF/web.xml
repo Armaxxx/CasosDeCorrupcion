@@ -25,8 +25,20 @@
         <servlet-class>AJAX.ServletGeneradorPartido</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>ServletGeneradorPartido2</servlet-name>
+        <servlet-class>AJAX.ServletGeneradorPartido2</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>ServletGeneradorPeriodico</servlet-name>
         <servlet-class>AJAX.ServletGeneradorPeriodico</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletRelaciones</servlet-name>
+        <servlet-class>AJAX.ServletRelaciones</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletRelacion</servlet-name>
+        <servlet-class>ServletDBConection.ServletRelacion</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletGeneradorCajas</servlet-name>
@@ -53,8 +65,20 @@
         <url-pattern>/ServletGeneradorPartido</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>ServletGeneradorPartido2</servlet-name>
+        <url-pattern>/ServletGeneradorPartido2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>ServletGeneradorPeriodico</servlet-name>
         <url-pattern>/ServletGeneradorPeriodico</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletRelaciones</servlet-name>
+        <url-pattern>/ServletRelaciones</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletRelacion</servlet-name>
+        <url-pattern>/ServletRelacion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
